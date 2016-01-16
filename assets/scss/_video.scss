@@ -1,0 +1,55 @@
+.video_rap {
+	width: 100%;
+	background: $green;
+	padding: 3% 0 5%;
+	overflow: hidden;
+	border-bottom: 1px solid black;
+
+	@include respond-to(break) {
+		float: left;
+		width: 50%;
+		border-bottom: none;
+	}
+
+	.video_container {
+		width: 94%;
+		margin: 0 3%;
+		overflow: hidden;
+		display: block;
+
+		@include respond-to(break) {
+			float: right;
+			max-width: 550px;
+			border-bottom: none;
+		}
+
+		h3 {
+			font-family: $font-head;
+			@include font-size(2);
+			padding: 0;
+			margin: 0 0 10px;
+			color: $brown;
+
+			.video_small {
+				@include font-size(1);
+				font-family: $font-body;
+				color: #333;
+			}
+		} // h3
+
+		.video_rapper {
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 */
+			padding-top: 25px;
+			height: 0;
+
+			iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			} // iframe
+		} // video rapper
+	} // video container
+} // video rap

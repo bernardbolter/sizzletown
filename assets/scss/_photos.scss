@@ -1,0 +1,26 @@
+.photos_rap {
+	width: 100%;
+	padding: 5% 0 2%;
+	overflow: hidden;
+	background: $green;
+
+	@include respond-to(break) {
+		float: right;
+		width: 50%;
+		padding: 0;
+	}
+
+	#slider {
+		width: 94%;
+		margin: 0 3%;
+		border: 1px solid black;
+
+		@include respond-to(break) {
+			border: 10px solid #fff;
+			width: 90%;
+			margin: 0 10% 0 0;
+			max-width: 500px;
+			float: left;
+		}
+	} // slider
+} // photos rap

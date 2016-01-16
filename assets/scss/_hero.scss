@@ -1,0 +1,22 @@
+.hero_rap {
+	width: 100%;
+	display: block;
+	background: $green;
+	overflow: hidden;
+	border-bottom: 1px solid #888;
+
+	@include respond-to(break) {
+		border-bottom: none;
+		}
+
+	img {
+		width: 90%;
+		max-width: 1050px;
+		margin: 10% auto;
+		display: block;
+
+		@include respond-to(break) {
+		margin: 5% auto;
+		}
+	} // img
+} // hero rap

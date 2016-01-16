@@ -1,0 +1,40 @@
+.nav_rap {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background: $brown;
+	overflow: hidden;
+	z-index: 9999;
+	@include opacity(0.9);
+
+	.nav_container {
+		width: 94%;
+		margin: 0 3%;
+
+		.navigation {
+			list-style: none;
+			@include clearfix;
+			float: right;
+			margin: 5px 0;
+
+			li {
+				float: left;
+				display: inline-block;
+
+				a {
+					font-family: $font-head;
+					color: $green;
+					margin: 0 0 0 10px;
+					text-decoration: none;
+					@include font-size(1);
+					padding: 0;
+					letter-spacing: 0.05em;
+
+					&:hover {
+						text-decoration: underline;
+					} // hover
+				} // a
+			} // li
+		} // navigation
+	} // nav container
+} // nav rap

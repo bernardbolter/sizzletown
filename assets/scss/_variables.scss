@@ -1,0 +1,19 @@
+// COLORS
+
+$green: #cbf100;
+$brown: #33251f;
+
+// BREAKPOINTS
+
+// BREAKPOINTS
+///////////////////////////////////////////////////////////////////////////////
+// Define your breakpoints
+
+$break: 801px;
+
+
+@mixin respond-to($media) {
+  @if $media == break {
+    @media only screen and (min-width: $break) { @content; }
+  }
+}
